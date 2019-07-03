@@ -18,7 +18,7 @@ export interface TableData extends Array<UserData> { }
 @Injectable()
 export class DataTableService {
     dataUrl = 'assets/data.json';
-    apiUrl = 'http://192.168.1.14:14045/check/dashboard';
+    apiUrl = 'http://192.168.1.102:14045/check/dashboard';
     constructor(private http: HttpClient) { }
 
     getData() {

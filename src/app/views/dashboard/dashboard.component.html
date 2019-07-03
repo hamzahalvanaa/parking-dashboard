@@ -188,19 +188,15 @@
             <td *ngIf="data?.endin == null" class="text-center">Sedang Berjalan</td>
             <td *ngIf="data?.endin" class="text-center">
               {{data.endin | amDifference: data.startin :'minutes' : true | number: '1.0-0'}} Menit</td>
-            <td *ngIf="data?.pictstart || data?.pictend" class="text-center"><img [src]="base64convert(data?.pictstart.data)"
-                style="width: 40px; height: 40px;"> <img [src]="base64convert(data?.pictend.data)"
+            <td class="text-center"><img *ngIf="data?.pictstart" [src]="base64convert(data?.pictstart.data)"
+                style="width: 40px; height: 40px;"> <img *ngIf="data?.pictend" [src]="base64convert(data?.pictend.data)"
                 style="width: 40px; height: 40px;"></td>
-            <td *ngIf="data?.pictstart == null || data?.pictend == null" class="text-center">No Data</td>
-            <!-- <td *ngIf="data?.pictend" class="text-center"><img [src]="base64ImageIn"
-                style="width: 40px; height: 40px;"> <img [src]="base64ImageOut" style="width: 40px; height: 40px;">
-            </td>
-            <td *ngIf="data?.pictend == null" class="text-center">Belum Ada Data</td> -->
+            <!-- <td *ngIf="data?.pictstart == null || data?.pictend == null" class="text-center">No Data</td> -->
           </tr>
         </tbody>
         <tfoot>
           <!-- <tr>
-            <td colspan="5">
+            <td colspan="15">
               <mfBootstrapPaginator [rowsOnPageSet]="[5,10,15]"></mfBootstrapPaginator>
             </td>
           </tr> -->

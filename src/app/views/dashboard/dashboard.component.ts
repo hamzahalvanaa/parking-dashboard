@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
   public listParking: any;
   public imgIn = "";
   public imgOut = "";
-  public loopList: any;
+  public loopList: any = [];
   public base64ImageIn: any;
   public base64ImageOut: any;
   public myModal;
