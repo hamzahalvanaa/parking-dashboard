@@ -35,6 +35,7 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
+// import { DetailsComponent } from './views/details/details.component';
 // import { Base64Pipe } from './pipes/base64.pipe';
 // import { MomentPipe } from './pipes/moment.pipe';
 
@@ -55,7 +56,8 @@ import { ChartsModule } from 'ng2-charts';
   ],
   declarations: [
     AppComponent,
-    ...APP_CONTAINERS
+    ...APP_CONTAINERS,
+    // DetailsComponent
     // Base64Pipe
   ],
   providers: [{

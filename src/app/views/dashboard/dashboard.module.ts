@@ -16,6 +16,7 @@ import { MomentPipe } from '../../pipes/moment.pipe';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { MomentModule } from 'ngx-moment';
 import { Base64Pipe } from '../../pipes/base64.pipe';
+import { DetailsComponent } from '../details/details.component';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { Base64Pipe } from '../../pipes/base64.pipe';
     DashboardComponent,
     DataFilterPipe,
     MomentPipe,
-    Base64Pipe
+    Base64Pipe,
+    DetailsComponent
   ]
 })
 export class DashboardModule { }

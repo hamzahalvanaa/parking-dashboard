@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "nocola-projects"
+  },
+  "targets": {
+    "nocola-projects": {
+      "hosting": {
+        "admin": [
+          "pgs-dashboard"
+        ]
+      }
+    }
+  }
+}
